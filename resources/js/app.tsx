@@ -1,4 +1,5 @@
 import { createInertiaApp } from '@inertiajs/react';
+import { FloatingThemeToggle } from '@/components/theme-toggle';
 import { Toaster } from '@/components/ui/sonner';
 import { TooltipProvider } from '@/components/ui/tooltip';
 import { initializeTheme } from '@/hooks/use-appearance';
@@ -32,6 +33,7 @@ createInertiaApp({
                 <TooltipProvider delayDuration={0}>
                     {app}
                     <Toaster />
+                    <FloatingThemeToggle />
                 </TooltipProvider>
             </ThemeProvider>
         );
